@@ -6,6 +6,7 @@
     --accent-primary: #00ff88;
     --accent-secondary: #00d4ff;
     --accent-warning: #ff6b35;
+    --accent-ai: #9d4edd;
     --text-primary: #e8edf4;
     --text-secondary: #8b95a8;
     --text-muted: #5a6478;
@@ -125,7 +126,7 @@ body {
 .nav-menu {
     display: flex;
     list-style: none;
-    gap: 2.5rem;
+    gap: 2rem;
 }
 
 .nav-menu a {
@@ -450,7 +451,7 @@ section {
 }
 
 .about-text {
-    max-width: 900px;
+    max-width: 1000px;
     margin: 0 auto;
 }
 
@@ -504,6 +505,213 @@ section {
     color: var(--text-secondary);
     font-size: 0.95rem;
     margin: 0;
+}
+
+/* Education Section */
+.education-section {
+    background: var(--primary-bg);
+}
+
+.education-content {
+    max-width: 1000px;
+    margin: 0 auto;
+}
+
+.degree-card {
+    background: var(--card-bg);
+    border: 1px solid var(--border-color);
+    border-radius: 12px;
+    padding: 3rem;
+    margin-bottom: 4rem;
+    transition: all 0.3s ease;
+}
+
+.degree-card.featured {
+    border: 2px solid var(--accent-ai);
+    box-shadow: 0 10px 40px rgba(157, 78, 221, 0.2);
+}
+
+.degree-badge {
+    display: flex;
+    align-items: center;
+    gap: 1rem;
+    margin-bottom: 1.5rem;
+}
+
+.degree-icon {
+    width: 60px;
+    height: 60px;
+    background: linear-gradient(135deg, var(--accent-ai), var(--accent-secondary));
+    border-radius: 12px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    font-size: 2rem;
+}
+
+.status-badge {
+    padding: 0.4rem 1rem;
+    border-radius: 20px;
+    font-family: var(--font-code);
+    font-size: 0.8rem;
+    font-weight: 600;
+    text-transform: uppercase;
+}
+
+.status-badge.in-progress {
+    background: rgba(157, 78, 221, 0.2);
+    border: 1px solid var(--accent-ai);
+    color: var(--accent-ai);
+}
+
+.degree-title {
+    font-family: var(--font-display);
+    font-size: 2rem;
+    margin-bottom: 0.5rem;
+    color: var(--text-primary);
+}
+
+.degree-school {
+    color: var(--accent-ai);
+    font-family: var(--font-code);
+    font-size: 1.1rem;
+    margin-bottom: 0.3rem;
+}
+
+.degree-period {
+    color: var(--text-muted);
+    font-size: 0.95rem;
+    margin-bottom: 1.5rem;
+}
+
+.degree-description {
+    color: var(--text-secondary);
+    font-size: 1.05rem;
+    line-height: 1.7;
+}
+
+/* Courses Section */
+.courses-section {
+    margin-top: 3rem;
+}
+
+.courses-heading {
+    font-family: var(--font-display);
+    font-size: 1.8rem;
+    margin-bottom: 2rem;
+    text-align: center;
+    color: var(--text-primary);
+}
+
+.courses-grid {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(320px, 1fr));
+    gap: 2rem;
+}
+
+.course-card {
+    background: var(--card-bg);
+    border: 1px solid var(--border-color);
+    border-radius: 8px;
+    padding: 2rem;
+    transition: all 0.3s ease;
+    position: relative;
+    overflow: hidden;
+}
+
+.course-card::before {
+    content: '';
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 4px;
+    height: 100%;
+    background: var(--accent-ai);
+    opacity: 0;
+    transition: opacity 0.3s ease;
+}
+
+.course-card.completed::before {
+    background: var(--accent-primary);
+    opacity: 1;
+}
+
+.course-card.in-progress::before {
+    background: var(--accent-ai);
+    opacity: 1;
+}
+
+.course-card:hover {
+    transform: translateY(-5px);
+    border-color: var(--accent-ai);
+    box-shadow: 0 10px 30px rgba(157, 78, 221, 0.2);
+}
+
+.course-status {
+    display: flex;
+    align-items: center;
+    gap: 0.5rem;
+    margin-bottom: 1rem;
+    font-family: var(--font-code);
+    font-size: 0.8rem;
+}
+
+.status-icon {
+    width: 20px;
+    height: 20px;
+    border-radius: 50%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    font-weight: bold;
+}
+
+.course-card.completed .status-icon {
+    background: var(--accent-primary);
+    color: var(--primary-bg);
+}
+
+.course-card.in-progress .status-icon {
+    background: var(--accent-ai);
+    color: var(--primary-bg);
+}
+
+.course-card.completed .status-text {
+    color: var(--accent-primary);
+}
+
+.course-card.in-progress .status-text {
+    color: var(--accent-ai);
+}
+
+.course-card h4 {
+    font-family: var(--font-display);
+    font-size: 1.2rem;
+    margin-bottom: 1rem;
+    color: var(--text-primary);
+}
+
+.course-card p {
+    color: var(--text-secondary);
+    font-size: 0.95rem;
+    line-height: 1.6;
+    margin-bottom: 1.5rem;
+}
+
+.course-skills {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 0.5rem;
+}
+
+.skill-badge {
+    font-family: var(--font-code);
+    font-size: 0.75rem;
+    padding: 0.3rem 0.7rem;
+    background: rgba(157, 78, 221, 0.1);
+    border: 1px solid var(--accent-ai);
+    border-radius: 4px;
+    color: var(--accent-ai);
 }
 
 /* Timeline */
@@ -924,7 +1132,8 @@ section {
     }
     
     .projects-grid,
-    .certifications-grid {
+    .certifications-grid,
+    .courses-grid {
         grid-template-columns: 1fr;
     }
     
@@ -964,7 +1173,12 @@ section {
     
     .expertise-grid,
     .certifications-grid,
-    .projects-grid {
+    .projects-grid,
+    .courses-grid {
         grid-template-columns: 1fr;
+    }
+    
+    .degree-card {
+        padding: 2rem;
     }
 }
