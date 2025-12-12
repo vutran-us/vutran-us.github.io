@@ -1,0 +1,247 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Blog | Cybersecurity & AI Insights</title>
+    <meta name="description" content="Technical articles on cybersecurity, AI, machine learning, and IT infrastructure by an experienced IT professional and AI student.">
+    <link rel="stylesheet" href="styles.css">
+    <link href="https://fonts.googleapis.com/css2?family=Orbitron:wght@400;700;900&family=Fira+Code:wght@300;400;500&family=JetBrains+Mono:wght@300;400;600&display=swap" rel="stylesheet">
+</head>
+<body>
+    <!-- Animated Background Grid -->
+    <div class="grid-background"></div>
+    <div class="scan-line"></div>
+    
+    <!-- Navigation -->
+    <nav class="navbar">
+        <div class="nav-container">
+            <div class="nav-brand">
+                <span class="terminal-prompt">$</span>
+                <span class="brand-text">cybersec.portfolio</span>
+            </div>
+            <ul class="nav-menu">
+                <li><a href="index.html#about" data-section="about">about</a></li>
+                <li><a href="index.html#education" data-section="education">education</a></li>
+                <li><a href="index.html#experience" data-section="experience">experience</a></li>
+                <li><a href="index.html#certifications" data-section="certifications">certifications</a></li>
+                <li><a href="index.html#projects" data-section="projects">projects</a></li>
+                <li><a href="blog.html" class="active">blog</a></li>
+                <li><a href="index.html#contact" data-section="contact">contact</a></li>
+            </ul>
+            <button class="mobile-toggle">
+                <span></span>
+                <span></span>
+                <span></span>
+            </button>
+        </div>
+    </nav>
+
+    <!-- Blog Header -->
+    <section class="blog-header">
+        <div class="container">
+            <div class="blog-header-content">
+                <span class="section-tag">&lt;blog&gt;</span>
+                <h1 class="blog-title">Tech Articles & Insights</h1>
+                <p class="blog-subtitle">Exploring cybersecurity, artificial intelligence, and IT infrastructure</p>
+            </div>
+        </div>
+    </section>
+
+    <!-- Blog Categories -->
+    <section class="blog-categories">
+        <div class="container">
+            <div class="categories-filter">
+                <button class="category-btn active" data-category="all">All Articles</button>
+                <button class="category-btn" data-category="ai-ml">AI & Machine Learning</button>
+                <button class="category-btn" data-category="cybersecurity">Cybersecurity</button>
+                <button class="category-btn" data-category="infrastructure">Infrastructure</button>
+                <button class="category-btn" data-category="career">Career & Learning</button>
+            </div>
+        </div>
+    </section>
+
+    <!-- Blog Articles Grid -->
+    <section class="blog-articles">
+        <div class="container">
+            <div class="articles-grid">
+                
+                <!-- Article 1 - Example -->
+                <article class="article-card" data-category="ai-ml">
+                    <div class="article-header">
+                        <div class="article-meta">
+                            <span class="article-date">December 12, 2024</span>
+                            <span class="article-reading-time">5 min read</span>
+                        </div>
+                        <span class="article-category ai-ml">AI & ML</span>
+                    </div>
+                    <h2 class="article-title">
+                        <a href="articles/pytorch-image-classifier.html">Building an Image Classifier with PyTorch: Transfer Learning Journey</a>
+                    </h2>
+                    <p class="article-excerpt">
+                        A deep dive into building my first image classification model using PyTorch and transfer learning with VGG networks. Learn how I achieved high accuracy in flower species classification.
+                    </p>
+                    <div class="article-tags">
+                        <span class="tag">PyTorch</span>
+                        <span class="tag">Transfer Learning</span>
+                        <span class="tag">CNN</span>
+                        <span class="tag">Deep Learning</span>
+                    </div>
+                    <a href="articles/pytorch-image-classifier.html" class="article-link">Read Article →</a>
+                </article>
+
+                <!-- Article 2 - Example -->
+                <article class="article-card" data-category="career">
+                    <div class="article-header">
+                        <div class="article-meta">
+                            <span class="article-date">December 10, 2024</span>
+                            <span class="article-reading-time">7 min read</span>
+                        </div>
+                        <span class="article-category career">Career</span>
+                    </div>
+                    <h2 class="article-title">
+                        <a href="articles/udacity-ai-masters.html">My Journey Through Udacity's AI Master's Program</a>
+                    </h2>
+                    <p class="article-excerpt">
+                        From 13 years in IT to studying AI: my experience with Udacity's Master's degree program, balancing work and learning, and the nanodegrees I'm pursuing.
+                    </p>
+                    <div class="article-tags">
+                        <span class="tag">Education</span>
+                        <span class="tag">Udacity</span>
+                        <span class="tag">Career Transition</span>
+                    </div>
+                    <a href="articles/udacity-ai-masters.html" class="article-link">Read Article →</a>
+                </article>
+
+                <!-- Article 3 - Example -->
+                <article class="article-card" data-category="cybersecurity">
+                    <div class="article-header">
+                        <div class="article-meta">
+                            <span class="article-date">December 5, 2024</span>
+                            <span class="article-reading-time">10 min read</span>
+                        </div>
+                        <span class="article-category cybersecurity">Cybersecurity</span>
+                    </div>
+                    <h2 class="article-title">
+                        <a href="articles/server-security-best-practices.html">Essential Security Practices for Server Administrators</a>
+                    </h2>
+                    <p class="article-excerpt">
+                        Lessons learned from years of server administration: hardening strategies, monitoring best practices, and common security pitfalls to avoid.
+                    </p>
+                    <div class="article-tags">
+                        <span class="tag">Security</span>
+                        <span class="tag">Server Admin</span>
+                        <span class="tag">Best Practices</span>
+                    </div>
+                    <a href="articles/server-security-best-practices.html" class="article-link">Read Article →</a>
+                </article>
+
+                <!-- Article 4 - Example -->
+                <article class="article-card" data-category="ai-ml">
+                    <div class="article-header">
+                        <div class="article-meta">
+                            <span class="article-date">November 28, 2024</span>
+                            <span class="article-reading-time">12 min read</span>
+                        </div>
+                        <span class="article-category ai-ml">AI & ML</span>
+                    </div>
+                    <h2 class="article-title">
+                        <a href="articles/ai-security-future.html">How AI is Transforming Cybersecurity</a>
+                    </h2>
+                    <p class="article-excerpt">
+                        Exploring the intersection of artificial intelligence and cybersecurity: machine learning for threat detection, automated response systems, and the future of security.
+                    </p>
+                    <div class="article-tags">
+                        <span class="tag">AI Security</span>
+                        <span class="tag">Threat Detection</span>
+                        <span class="tag">Machine Learning</span>
+                    </div>
+                    <a href="articles/ai-security-future.html" class="article-link">Read Article →</a>
+                </article>
+
+                <!-- Article 5 - Example -->
+                <article class="article-card" data-category="infrastructure">
+                    <div class="article-header">
+                        <div class="article-meta">
+                            <span class="article-date">November 20, 2024</span>
+                            <span class="article-reading-time">8 min read</span>
+                        </div>
+                        <span class="article-category infrastructure">Infrastructure</span>
+                    </div>
+                    <h2 class="article-title">
+                        <a href="articles/network-troubleshooting.html">Network Troubleshooting: A Systematic Approach</a>
+                    </h2>
+                    <p class="article-excerpt">
+                        A practical guide to diagnosing and resolving network issues efficiently, based on real-world scenarios from my years as a network administrator.
+                    </p>
+                    <div class="article-tags">
+                        <span class="tag">Networking</span>
+                        <span class="tag">Troubleshooting</span>
+                        <span class="tag">TCP/IP</span>
+                    </div>
+                    <a href="articles/network-troubleshooting.html" class="article-link">Read Article →</a>
+                </article>
+
+                <!-- Article 6 - Example -->
+                <article class="article-card" data-category="career">
+                    <div class="article-header">
+                        <div class="article-meta">
+                            <span class="article-date">November 15, 2024</span>
+                            <span class="article-reading-time">6 min read</span>
+                        </div>
+                        <span class="article-category career">Career</span>
+                    </div>
+                    <h2 class="article-title">
+                        <a href="articles/comptia-security-plus-guide.html">How I Passed CompTIA Security+ on the First Try</a>
+                    </h2>
+                    <p class="article-excerpt">
+                        My study strategy, recommended resources, and key concepts that helped me successfully pass the Security+ certification exam.
+                    </p>
+                    <div class="article-tags">
+                        <span class="tag">Certification</span>
+                        <span class="tag">CompTIA</span>
+                        <span class="tag">Study Guide</span>
+                    </div>
+                    <a href="articles/comptia-security-plus-guide.html" class="article-link">Read Article →</a>
+                </article>
+
+            </div>
+
+            <!-- No Articles Found Message -->
+            <div class="no-articles" style="display: none;">
+                <p>No articles found in this category yet. Check back soon!</p>
+            </div>
+        </div>
+    </section>
+
+    <!-- Newsletter Subscription (Optional) -->
+    <section class="newsletter-section">
+        <div class="container">
+            <div class="newsletter-card">
+                <h3>Stay Updated</h3>
+                <p>Get notified when I publish new articles on cybersecurity, AI, and technology.</p>
+                <form class="newsletter-form">
+                    <input type="email" placeholder="your.email@example.com" required>
+                    <button type="submit" class="btn btn-primary">Subscribe</button>
+                </form>
+            </div>
+        </div>
+    </section>
+
+    <!-- Footer -->
+    <footer class="footer">
+        <div class="container">
+            <div class="footer-content">
+                <div class="footer-left">
+                    <p>&copy; 2025 Cybersecurity Portfolio. All rights reserved.</p>
+                </div>
+                <div class="footer-right">
+                    <p>Built with passion for security and excellence</p>
+                </div>
+            </div>
+        </div>
+    </footer>
+
+    <script src="blog-script.js"></script>
+</body>
+</html>

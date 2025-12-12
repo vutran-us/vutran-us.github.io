@@ -1,0 +1,167 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Article Title | Cybersecurity Portfolio</title>
+    <meta name="description" content="Article description goes here">
+    <link rel="stylesheet" href="../styles.css">
+    <link href="https://fonts.googleapis.com/css2?family=Orbitron:wght@400;700;900&family=Fira+Code:wght@300;400;500&family=JetBrains+Mono:wght@300;400;600&display=swap" rel="stylesheet">
+    <style>
+        /* Include blog styles inline or link to blog-styles.css */
+    </style>
+</head>
+<body>
+    <!-- Animated Background Grid -->
+    <div class="grid-background"></div>
+    <div class="scan-line"></div>
+    
+    <!-- Navigation -->
+    <nav class="navbar">
+        <div class="nav-container">
+            <div class="nav-brand">
+                <span class="terminal-prompt">$</span>
+                <span class="brand-text">cybersec.portfolio</span>
+            </div>
+            <ul class="nav-menu">
+                <li><a href="../index.html#about">about</a></li>
+                <li><a href="../index.html#education">education</a></li>
+                <li><a href="../index.html#experience">experience</a></li>
+                <li><a href="../index.html#certifications">certifications</a></li>
+                <li><a href="../index.html#projects">projects</a></li>
+                <li><a href="../blog.html" class="active">blog</a></li>
+                <li><a href="../index.html#contact">contact</a></li>
+            </ul>
+        </div>
+    </nav>
+
+    <!-- Article Content -->
+    <article class="article-page">
+        <div class="container">
+            <div class="article-content">
+                <!-- Back to Blog Link -->
+                <a href="../blog.html" class="back-link" style="display: inline-flex; align-items: center; color: var(--accent-primary); text-decoration: none; margin-bottom: 2rem; font-family: var(--font-code);">
+                    ← Back to Blog
+                </a>
+
+                <!-- Article Header -->
+                <header class="article-header" style="margin-bottom: 3rem;">
+                    <div class="article-meta" style="margin-bottom: 1rem;">
+                        <span class="article-date">December 12, 2024</span>
+                        <span style="margin: 0 0.5rem;">•</span>
+                        <span class="article-reading-time">5 min read</span>
+                        <span style="margin: 0 0.5rem;">•</span>
+                        <span class="article-category ai-ml">AI & ML</span>
+                    </div>
+                    
+                    <h1 class="article-title">Your Article Title Goes Here</h1>
+                    
+                    <p class="article-excerpt" style="font-size: 1.2rem; color: var(--text-secondary); margin-top: 1rem;">
+                        A compelling introduction or excerpt that summarizes the article.
+                    </p>
+                    
+                    <div class="article-tags" style="margin-top: 1.5rem;">
+                        <span class="tag">Tag1</span>
+                        <span class="tag">Tag2</span>
+                        <span class="tag">Tag3</span>
+                    </div>
+                </header>
+
+                <!-- Article Body -->
+                <div class="article-body">
+                    <h2>Introduction</h2>
+                    <p>
+                        Start with a compelling introduction. Explain what the article is about and why it matters.
+                        This sets the context for your readers.
+                    </p>
+
+                    <h2>Main Section 1</h2>
+                    <p>
+                        Your content here. Use clear, concise paragraphs. Break up long sections with subheadings.
+                    </p>
+
+                    <h3>Subsection 1.1</h3>
+                    <p>
+                        More detailed content. You can include:
+                    </p>
+                    <ul>
+                        <li>Bullet points for lists</li>
+                        <li>Important concepts</li>
+                        <li>Key takeaways</li>
+                    </ul>
+
+                    <h3>Code Examples</h3>
+                    <p>For technical articles, include code examples:</p>
+                    <pre><code>import torch
+import torch.nn as nn
+
+# Example PyTorch code
+class SimpleNN(nn.Module):
+    def __init__(self):
+        super(SimpleNN, self).__init__()
+        self.fc1 = nn.Linear(784, 128)
+        self.fc2 = nn.Linear(128, 10)
+    
+    def forward(self, x):
+        x = torch.relu(self.fc1(x))
+        x = self.fc2(x)
+        return x</code></pre>
+
+                    <h2>Main Section 2</h2>
+                    <p>
+                        Continue with your content. Use images to illustrate concepts when helpful.
+                    </p>
+
+                    <blockquote>
+                        Use blockquotes for important quotes or key insights.
+                    </blockquote>
+
+                    <h2>Conclusion</h2>
+                    <p>
+                        Summarize the key points. Provide actionable takeaways for your readers.
+                        End with a thought-provoking statement or call to action.
+                    </p>
+                </div>
+
+                <!-- Share Buttons -->
+                <div class="article-share">
+                    <h4>Share this article:</h4>
+                    <div class="share-buttons">
+                        <a href="#" class="share-btn">Twitter</a>
+                        <a href="#" class="share-btn">LinkedIn</a>
+                        <a href="#" class="share-btn">Copy Link</a>
+                    </div>
+                </div>
+
+                <!-- Author Bio -->
+                <div class="author-bio">
+                    <div class="author-avatar"></div>
+                    <div class="author-info">
+                        <h4>About the Author</h4>
+                        <p>
+                            IT Security Professional with 13 years of experience, currently pursuing a Master's degree in Artificial Intelligence.
+                            Passionate about bridging cybersecurity and machine learning.
+                        </p>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </article>
+
+    <!-- Footer -->
+    <footer class="footer">
+        <div class="container">
+            <div class="footer-content">
+                <div class="footer-left">
+                    <p>&copy; 2025 Cybersecurity Portfolio. All rights reserved.</p>
+                </div>
+                <div class="footer-right">
+                    <p>Built with passion for security and excellence</p>
+                </div>
+            </div>
+        </div>
+    </footer>
+
+    <script src="../script.js"></script>
+</body>
+</html>
