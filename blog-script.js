@@ -1,3 +1,13 @@
+/*
+ * Copyright © 2025 Vu Tran / LabProveHub
+ * All rights reserved.
+ * 
+ * Unauthorized copying, modification, or distribution of this code
+ * is strictly prohibited without written permission.
+ * 
+ * Portfolio: https://labprovehub.com
+ */
+
 // Blog page functionality
 
 // Category filtering

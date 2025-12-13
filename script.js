@@ -1,3 +1,13 @@
+/*
+ * Copyright © 2025 Vu Tran / LabProveHub
+ * All rights reserved.
+ * 
+ * Unauthorized copying, modification, or distribution of this code
+ * is strictly prohibited without written permission.
+ * 
+ * Portfolio: https://labprovehub.com
+ */
+
 // Smooth scroll for navigation links
 document.querySelectorAll('a[href^="#"]').forEach(anchor => {
     anchor.addEventListener('click', function (e) {
