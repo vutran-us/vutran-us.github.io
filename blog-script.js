@@ -54,16 +54,51 @@ if (mobileToggle) {
 const newsletterForm = document.querySelector('.newsletter-form');
 
 if (newsletterForm) {
-    newsletterForm.addEventListener('submit', function(e) {
+    newsletterForm.addEventListener('submit', async function(e) {
         e.preventDefault();
         
-        const email = this.querySelector('input[type="email"]').value;
+        const submitButton = this.querySelector('button[type="submit"]');
+        const originalText = submitButton.textContent;
         
-        // Here you would integrate with a newsletter service
-        // For now, just show a success message
-        alert(`Thanks for subscribing! We'll send updates to ${email}`);
+        // Disable button and show loading state
+        submitButton.disabled = true;
+        submitButton.textContent = 'Subscribing...';
         
-        this.reset();
+        try {
+            const formData = new FormData(this);
+            const response = await fetch(this.action, {
+                method: 'POST',
+                body: formData,
+                headers: {
+                    'Accept': 'application/json'
+                }
+            });
+            
+            if (response.ok) {
+                submitButton.textContent = '✓ Subscribed!';
+                submitButton.style.background = 'var(--accent-primary)';
+                submitButton.style.color = 'var(--primary-bg)';
+                this.reset();
+                
+                // Reset button after 3 seconds
+                setTimeout(() => {
+                    submitButton.textContent = originalText;
+                    submitButton.disabled = false;
+                    submitButton.style.background = '';
+                    submitButton.style.color = '';
+                }, 3000);
+            } else {
+                throw new Error('Subscription failed');
+            }
+        } catch (error) {
+            submitButton.textContent = '✗ Error - Try Again';
+            submitButton.style.background = 'var(--accent-warning)';
+            setTimeout(() => {
+                submitButton.textContent = originalText;
+                submitButton.disabled = false;
+                submitButton.style.background = '';
+            }, 3000);
+        }
     });
 }
 
